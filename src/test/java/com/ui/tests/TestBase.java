@@ -48,7 +48,7 @@ public class TestBase {
 		if (isLambdaTest) {
 			LambdaTestUtility.quitSession(); // To quit browser sessions on LambdaTest
 		} else {
-			homePage.getDriver().quit(); // To quit browser sessions on Local
+			homePage.quit(); // To quit browser sessions on Local
 		}
 
 	}

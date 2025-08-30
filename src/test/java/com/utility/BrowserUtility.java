@@ -152,10 +152,9 @@ public abstract class BrowserUtility {
 		}
 		return path;
 	}
-	
-//	 public void quit() {
-//	        if (driver != null) {
-//	            ((WebDriver) driver).quit(); // Quit the browser session
-//	        }
-//	    }
+
+	public void quit() {
+		driver.get().quit(); // Quit the browser session
+	}
+
 }
