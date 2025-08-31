@@ -140,9 +140,8 @@ public abstract class BrowserUtility {
 		Date date = new Date();
 		SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");
 		String timeStamp = format.format(date);
-		String path = System.getProperty("user.dir") + "//screenshots//" + name + " - " + timeStamp + ".png";
-		// String path = System.getProperty("user.dir") + File.separator + "screenshots"
-		// + File.separator + name + " - "+ timeStamp + ".png";
+	//	String path = System.getProperty("user.dir") + "/screenshots/" + name + " - " + timeStamp + ".png";
+		String path = "./screenshots/" + name + " - " + timeStamp + ".png";
 
 		File screenshotFile = new File(path);
 		try {
@@ -150,6 +149,7 @@ public abstract class BrowserUtility {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		return path;
 	}
 
