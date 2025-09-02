@@ -43,13 +43,13 @@ public class TestBase {
 		return homePage;
 	}
 
-//	@AfterMethod(description = "Tear Down the browser")
-//	public void tearDown() {
-//		if (isLambdaTest) {
-//			LambdaTestUtility.quitSession(); // To quit browser sessions on LambdaTest
-//		} else {
-//			homePage.quit(); // To quit browser sessions on Local
-//		}
-//
-//	}
+	@AfterMethod(description = "Tear Down the browser")
+	public void tearDown() {
+		if (isLambdaTest) {
+			LambdaTestUtility.quitSession(); // To quit browser sessions on LambdaTest
+		} else {
+			homePage.quit(); // To quit browser sessions on Local
+		}
+
+	}
 }
