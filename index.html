@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/7/3</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 13 17:40:56 UTC 2026</td>
+<td>Started on:</td><td>Fri Feb 13 19:00:20 UTC 2026</td>
 </tr>
-<tr><td>Total time:</td><td>52 seconds (52514 ms)</td>
+<tr><td>Total time:</td><td>59 seconds (59669 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,63 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=uday@gmail.com, password=pass4321]</td>
-<td><div><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Uday Test]
+<td title='com.ui.tests.AddNewFirstAddressTest.addNewAddress()'><b>addNewAddress</b><br>Test class: com.ui.tests.AddNewFirstAddressTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Louisiana
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-1017-azure&apos;, java.version: &apos;11.0.30&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:167)
+	at com.utility.BrowserUtility.selectFromDropDown(BrowserUtility.java:198)
+	at com.ui.pages.AddressPage.saveAddress(AddressPage.java:40)
+	at com.ui.tests.AddNewFirstAddressTest.addNewAddress(AddNewFirstAddressTest.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1732092588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1732092588'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Louisiana
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-1017-azure&apos;, java.version: &apos;11.0.30&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:167)
+	at com.utility.BrowserUtility.selectFromDropDown(BrowserUtility.java:198)
+	at com.ui.pages.AddressPage.saveAddress(AddressPage.java:40)
+	at com.ui.tests.AddNewFirstAddressTest.addNewAddress(AddNewFirstAddressTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre></div></td>
+<td>1</td>
+<td>com.ui.tests.AddNewFirstAddressTest@b70da4c</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=vavic26266@ahanim.com, password=password]</td>
+<td><div><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
 	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:29)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1642099265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1642099265'><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Uday Test]
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1817812122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1817812122'><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -115,13 +162,52 @@ function toggleAllBoxes() {
 <td>2</td>
 <td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
 <tr>
+<td title='com.ui.tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=vavic26266@ahanim.com, password=password]</td>
+<td><div><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
+	at com.ui.tests.LoginTest.loginTest(LoginTest.java:21)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089507103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089507103'><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.ui.tests.LoginTest.loginTest(LoginTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre></div></td>
+<td>2</td>
+<td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
+<tr>
 <td title='com.ui.tests.ProductCheckoutTest.checkoutTest()'><b>checkoutTest</b><br>Test class: com.ui.tests.ProductCheckoutTest<br>Test method: Verify if the logged in User is able to buy a dress</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: processAddress (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-1017-azure&apos;, java.version: &apos;11.0.30&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.132, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38151}, goog:processID: 2622, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38151/devtoo..., se:cdpVersion: 144.0.7559.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b36f9d904ae15c9ea46e6ebdeee3136b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.132, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35187}, goog:processID: 2629, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35187/devtoo..., se:cdpVersion: 144.0.7559.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d41905e3eef45867d5f31de427fa83b
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.utility.BrowserUtility.clickOn(BrowserUtility.java:146)
@@ -132,13 +218,13 @@ Session ID: b36f9d904ae15c9ea46e6ebdeee3136b
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2135506509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2135506509'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: processAddress (tried for 30 second(s) with 500 milliseconds interval)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1559701811", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1559701811'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: processAddress (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-1017-azure&apos;, java.version: &apos;11.0.30&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.132, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38151}, goog:processID: 2622, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38151/devtoo..., se:cdpVersion: 144.0.7559.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b36f9d904ae15c9ea46e6ebdeee3136b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.132, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35187}, goog:processID: 2629, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35187/devtoo..., se:cdpVersion: 144.0.7559.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d41905e3eef45867d5f31de427fa83b
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.utility.BrowserUtility.clickOn(BrowserUtility.java:146)
@@ -166,6 +252,45 @@ Session ID: b36f9d904ae15c9ea46e6ebdeee3136b
 <td>34</td>
 <td>com.ui.tests.ProductCheckoutTest@784b990c</td></tr>
 <tr>
+<td title='com.ui.tests.LoginTest.loginExcelTest()'><b>loginExcelTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=vavic26266@ahanim.com, password=password]</td>
+<td><div><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1951023426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1951023426'><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre></div></td>
+<td>1</td>
+<td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
+<tr>
 <td title='com.ui.tests.SearchProductTest.verifyProductSearchTest()'><b>verifyProductSearchTest</b><br>Test class: com.ui.tests.SearchProductTest<br>Test method: Verify if the logged in user is able to search for a product and correct products search result are displayed</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
 	at com.ui.tests.SearchProductTest.verifyProductSearchTest(SearchProductTest.java:27)
@@ -174,8 +299,8 @@ Session ID: b36f9d904ae15c9ea46e6ebdeee3136b
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1392977986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1392977986'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace90306136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace90306136'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -206,55 +331,16 @@ Session ID: b36f9d904ae15c9ea46e6ebdeee3136b
 <td>1</td>
 <td>com.ui.tests.SearchProductTest@3c989952</td></tr>
 <tr>
-<td title='com.ui.tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=vavic26266@ahanim.com, password=password]</td>
-<td><div><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
-	at com.ui.tests.LoginTest.loginTest(LoginTest.java:21)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1683377027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1683377027'><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.ui.tests.LoginTest.loginTest(LoginTest.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-</pre></div></td>
-<td>2</td>
-<td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
-<tr>
-<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=vavic26266@ahanim.com, password=password]</td>
-<td><div><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
+<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=uday@gmail.com, password=pass4321]</td>
+<td><div><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Uday Test]
 	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:29)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace593181261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace593181261'><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1918097209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1918097209'><pre>java.lang.AssertionError: expected [Karan Sagale] but found [Uday Test]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -283,92 +369,6 @@ Session ID: b36f9d904ae15c9ea46e6ebdeee3136b
 </pre></div></td>
 <td>2</td>
 <td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
-<tr>
-<td title='com.ui.tests.LoginTest.loginExcelTest()'><b>loginExcelTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=vavic26266@ahanim.com, password=password]</td>
-<td><div><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
-	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2080293928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2080293928'><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-</pre></div></td>
-<td>2</td>
-<td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
-<tr>
-<td title='com.ui.tests.AddNewFirstAddressTest.addNewAddress()'><b>addNewAddress</b><br>Test class: com.ui.tests.AddNewFirstAddressTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Oklahoma
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-1017-azure&apos;, java.version: &apos;11.0.30&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:167)
-	at com.utility.BrowserUtility.selectFromDropDown(BrowserUtility.java:198)
-	at com.ui.pages.AddressPage.saveAddress(AddressPage.java:40)
-	at com.ui.tests.AddNewFirstAddressTest.addNewAddress(AddNewFirstAddressTest.java:25)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace690193956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace690193956'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Oklahoma
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-1017-azure&apos;, java.version: &apos;11.0.30&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:167)
-	at com.utility.BrowserUtility.selectFromDropDown(BrowserUtility.java:198)
-	at com.ui.pages.AddressPage.saveAddress(AddressPage.java:40)
-	at com.ui.tests.AddNewFirstAddressTest.addNewAddress(AddNewFirstAddressTest.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-</pre></div></td>
-<td>2</td>
-<td>com.ui.tests.AddNewFirstAddressTest@b70da4c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -379,17 +379,17 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=karan@gmail.com, password=pass1234]</td>
+<td title='com.ui.tests.InvalidCredLoginTest.loginTest()'><b>loginTest</b><br>Test class: com.ui.tests.InvalidCredLoginTest<br>Test method: Verify if the proper error message is shown for the user when they enter invalid credentials</td>
+<td></td>
+<td>2</td>
+<td>com.ui.tests.InvalidCredLoginTest@38f116f6</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=karan@gmail.com, password=pass1234]</td>
 <td></td>
 <td>3</td>
 <td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
 <tr>
-<td title='com.ui.tests.InvalidCredLoginTest.loginTest()'><b>loginTest</b><br>Test class: com.ui.tests.InvalidCredLoginTest<br>Test method: Verify if the proper error message is shown for the user when they enter invalid credentials</td>
-<td></td>
-<td>3</td>
-<td>com.ui.tests.InvalidCredLoginTest@38f116f6</td></tr>
-<tr>
-<td title='com.ui.tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=karan@gmail.com, password=pass1234]</td>
+<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=karan@gmail.com, password=pass1234]</td>
 <td></td>
 <td>3</td>
 <td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
@@ -411,8 +411,8 @@ Driver info: driver.version: unknown
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1251104630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1251104630'><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace273508696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace273508696'><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -450,8 +450,47 @@ Driver info: driver.version: unknown
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1691732604", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1691732604'><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace384951956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace384951956'><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre></div></td>
+<td>2</td>
+<td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.loginExcelTest()'><b>loginExcelTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=vavic26266@ahanim.com, password=password]</td>
+<td><div><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078087750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2078087750'><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -478,46 +517,7 @@ Driver info: driver.version: unknown
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 </pre></div></td>
-<td>2</td>
-<td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
-<tr>
-<td title='com.ui.tests.LoginTest.loginExcelTest()'><b>loginExcelTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with the valid user is able to login into the application<br>Parameters: User [emailAddress=vavic26266@ahanim.com, password=password]</td>
-<td><div><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
-	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1140238200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1140238200'><pre>java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-</pre></div></td>
-<td>2</td>
+<td>3</td>
 <td>com.ui.tests.LoginTest@1a9c38eb</td></tr>
 </table><p>
 </body>
