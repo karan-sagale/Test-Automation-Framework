@@ -54,8 +54,15 @@ jobs:
   - name: Copy Reports to gh-pages folder
     if: always()
     run: |
-      cp -R target public/extent-reports/ || true
+     mkdir -p public/extent-reports
+     REPORT=$(find target -name "*.html" | head -n 1)
+     if [ -f "$REPORT" ]; then
+      cp "$REPORT" public/extent-reports/index.html
+     else
+      echo "No HTML report found!"
+     fi
       cp -R screenshots public/extent-reports/ || true
+      ls -R public/extent-reports
   - name: Deploy to GitHub Pages
     if: always()
     uses: JamesIves/github-pages-deploy-action@v4
