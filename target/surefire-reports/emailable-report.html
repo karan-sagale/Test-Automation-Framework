@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Automation Practice Test Suite</th></tr>
+<tr><td><a href="#t0">UI Automation Test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">7</td><td class="num">56,651</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Practice Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">UI Automation Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ui.tests.AddNewFirstAddressTest</td><td><a href="#m0">addNewAddress</a></td><td rowspan="1">1771001820562</td><td rowspan="1">2156</td></tr><tr class="failedodd"><td rowspan="4">com.ui.tests.LoginTest</td><td><a href="#m1">loginCSVTest</a></td><td rowspan="2">1771001825648</td><td rowspan="2">2187</td></tr><tr class="failedodd"><td><a href="#m2">loginCSVTest</a></td></tr><tr class="failedodd"><td><a href="#m3">loginExcelTest</a></td><td rowspan="1">1771001839900</td><td rowspan="1">1949</td></tr><tr class="failedodd"><td><a href="#m4">loginTest</a></td><td rowspan="1">1771001825181</td><td rowspan="1">2025</td></tr><tr class="failedeven"><td rowspan="1">com.ui.tests.ProductCheckoutTest</td><td><a href="#m5">checkoutTest</a></td><td rowspan="1">1771001818622</td><td rowspan="1">35192</td></tr><tr class="failedodd"><td rowspan="1">com.ui.tests.SearchProductTest</td><td><a href="#m6">verifyProductSearchTest</a></td><td rowspan="1">1771001818449</td><td rowspan="1">1232</td></tr><tr><th colspan="4">UI Automation Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">com.ui.tests.LoginTest</td><td><a href="#m7">loginExcelTest</a></td><td rowspan="3">1771001816054</td><td rowspan="3">3548</td></tr><tr class="retriedeven"><td><a href="#m8">loginExcelTest</a></td></tr><tr class="retriedeven"><td><a href="#m9">loginExcelTest</a></td></tr><tr><th colspan="4">UI Automation Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.ui.tests.InvalidCredLoginTest</td><td><a href="#m10">loginTest</a></td><td rowspan="1">1771001813305</td><td rowspan="1">2448</td></tr><tr class="passedodd"><td rowspan="2">com.ui.tests.LoginTest</td><td><a href="#m11">loginCSVTest</a></td><td rowspan="1">1771001816570</td><td rowspan="1">3086</td></tr><tr class="passedodd"><td><a href="#m12">loginTest</a></td><td rowspan="1">1771001816093</td><td rowspan="1">3123</td></tr></tbody>
+</table>
+<h2>UI Automation Test</h2><h3 id="m0">com.ui.tests.AddNewFirstAddressTest#addNewAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: New Hampshire
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-1017-azure&apos;, java.version: &apos;11.0.30&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:167)
+	at com.utility.BrowserUtility.selectFromDropDown(BrowserUtility.java:198)
+	at com.ui.pages.AddressPage.saveAddress(AddressPage.java:40)
+	at com.ui.tests.AddNewFirstAddressTest.addNewAddress(AddNewFirstAddressTest.java:25)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ui.tests.LoginTest#loginCSVTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [emailAddress=vavic26266@ahanim.com, password=password]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
+	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:29)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.ui.tests.LoginTest#loginCSVTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [emailAddress=uday@gmail.com, password=pass4321]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Karan Sagale] but found [Uday Test]
+	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:29)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.ui.tests.LoginTest#loginExcelTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [emailAddress=vavic26266@ahanim.com, password=password]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.ui.tests.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [emailAddress=vavic26266@ahanim.com, password=password]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Karan Sagale] but found [Vavic Test]
+	at com.ui.tests.LoginTest.loginTest(LoginTest.java:21)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.ui.tests.ProductCheckoutTest#checkoutTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: processAddress (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-1017-azure&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.132, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33375}, goog:processID: 2585, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33375/devtoo..., se:cdpVersion: 144.0.7559.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae83384de23cb439c647237ccaf22706
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.utility.BrowserUtility.clickOn(BrowserUtility.java:146)
+	at com.ui.pages.ConfirmAddressPage.goToShippmentPage(ConfirmAddressPage.java:17)
+	at com.ui.tests.ProductCheckoutTest.checkoutTest(ProductCheckoutTest.java:24)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.ui.tests.SearchProductTest#verifyProductSearchTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.ui.tests.SearchProductTest.verifyProductSearchTest(SearchProductTest.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.ui.tests.LoginTest#loginExcelTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [emailAddress=vavic26266@ahanim.com, password=password]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.ui.tests.LoginTest#loginExcelTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [emailAddress=vavic26266@ahanim.com, password=password]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.ui.tests.LoginTest#loginExcelTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [emailAddress=vavic26266@ahanim.com, password=password]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Karan Sagale1] but found [Vavic Test]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.ui.tests.InvalidCredLoginTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.ui.tests.LoginTest#loginCSVTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [emailAddress=karan@gmail.com, password=pass1234]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.ui.tests.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [emailAddress=karan@gmail.com, password=pass1234]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
