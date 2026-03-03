@@ -104,4 +104,5 @@ This framework is integrated with GitHub Actions for CI/CD automation.
 - 🌐 Reports are accessible online via GitHub Pages
 
 👉 You can view the html reports at:
-https://karan-sagale.github.io/Test-Automation-Framework/report.html
+https://karan-sagale.github.io/Test-Automation-Framework/index.html
+
