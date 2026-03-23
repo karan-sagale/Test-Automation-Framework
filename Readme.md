@@ -7,9 +7,9 @@ It incorporates **data-driven testing, detailed logging, and advanced reporting*
 ---
 
 ## 🚀 About Me  
-Hi, my name is **Karan Sagale**. I have **7 years of experience** in Software Testing, specializing in **CRM and CLM applications** in the pharmaceutical domain.  
+Hi, I’m **Karan Sagale**, an experienced QA professional with **7 years of expertise** in testing **CRM and CLM applications** within the pharmaceutical domain.
 
-My expertise spans **Manual Testing, API Testing, and Selenium-based automation**, with a focus on building reliable and scalable test solutions.  
+I specialize in **Selenium automation, API testing, and test framework development**, with hands-on experience in building robust and scalable automation solutions. I am actively transitioning towards SDET roles, focusing on clean coding practices, CI/CD integration, and high-quality engineering standards.
 
 ---
 
