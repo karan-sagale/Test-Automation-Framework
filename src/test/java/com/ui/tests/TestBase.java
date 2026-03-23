@@ -21,7 +21,7 @@ public class TestBase {
 	private boolean isLambdaTest;
 
 	@Parameters({ "browser", "isLambdaTest", "isHeadless" })
-	@BeforeMethod(description = "Load the Homepage of the website")
+	@BeforeMethod(alwaysRun= true, description = "Load the Homepage of the website")
 	public void setup(@Optional("chrome") String browser, @Optional("false") boolean isLambdaTest,
 			@Optional("false") boolean isHeadless, ITestResult result) {
 
@@ -43,13 +43,27 @@ public class TestBase {
 		return homePage;
 	}
 
-	@AfterMethod(description = "Tear Down the browser")
-	public void tearDown() {
-		if (isLambdaTest) {
-			LambdaTestUtility.quitSession(); // To quit browser sessions on LambdaTest
-		} else {
-			homePage.quit(); // To quit browser sessions on Local Instance
-		}
+//	@AfterMethod(description = "Tear Down the browser")
+//	public void tearDown() {
+//		if (isLambdaTest) {
+//			LambdaTestUtility.quitSession(); // To quit browser sessions on LambdaTest
+//		} else {
+//			homePage.quit(); // To quit browser sessions on Local Instance
+//		}
+//
+//	}
 
+	@AfterMethod(alwaysRun = true, description = "Tear Down the browser")
+	public void tearDown() {
+		try {
+			if (isLambdaTest) {
+				LambdaTestUtility.quitSession();
+			} else if (homePage != null) {
+				homePage.quit();
+			}
+		} catch (Exception e) {
+			System.out.println("Teardown skipped: " + e.getMessage());
+		}
 	}
+
 }

@@ -14,7 +14,7 @@ public class LoginTest extends TestBase {
 
 	Logger logger = LoggerUtility.getLogger(this.getClass());
 
-	@Test(description = "Verifies with the valid user is able to login into the application", groups = { "e2e",
+	@Test(description = "Verifies with the valid user is able to login into the application", groups = { "e2e","login",
 			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")
 	public void loginTest(User user) {
 

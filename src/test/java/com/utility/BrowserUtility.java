@@ -33,16 +33,22 @@ public abstract class BrowserUtility {
 
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	private Logger logger = LoggerUtility.getLogger(this.getClass());
-	private WebDriverWait wait;
+	private static ThreadLocal<WebDriverWait> wait = new ThreadLocal<>();
+//	private static WebDriverWait wait;
 
 	public WebDriver getDriver() {
 		return driver.get();
 	}
 
+	public WebDriverWait getWait() {
+		return wait.get();
+	}
+
 	public BrowserUtility(WebDriver driver) {
 		super();
 		this.driver.set(driver); // Initialize the instance variable driver!!
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30L));
+		wait.set(new WebDriverWait(driver, Duration.ofSeconds(30)));
+		// wait = new WebDriverWait(driver, Duration.ofSeconds(30L));
 	}
 
 	public BrowserUtility(String browserName) {
@@ -50,11 +56,11 @@ public abstract class BrowserUtility {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver.set(new ChromeDriver());
-			wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+			wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			driver.set(new EdgeDriver());
-			wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+			wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 		} else {
 			logger.error("Invalid Browser Name... Please select Chrome or Edge only");
@@ -68,15 +74,15 @@ public abstract class BrowserUtility {
 
 		if (browserName == Browser.CHROME) {
 			driver.set(new ChromeDriver());
-			wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+			wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 		} else if (browserName == Browser.EDGE) {
 			driver.set(new EdgeDriver());
-			wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+			wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 		} else if (browserName == Browser.FIREFOX) {
 			driver.set(new FirefoxDriver());
-			wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+			wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 		}
 	}
@@ -90,11 +96,11 @@ public abstract class BrowserUtility {
 				options.addArguments("--headless"); // headless
 				options.addArguments("--window-size=1920,1080"); // fullscreen mode
 				driver.set(new ChromeDriver(options));
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 			} else {
 				driver.set(new ChromeDriver());
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 			}
 		}
@@ -105,11 +111,11 @@ public abstract class BrowserUtility {
 				options.addArguments("--headless");
 				options.addArguments("disable-gpu");
 				driver.set(new EdgeDriver(options));
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 			} else {
 				driver.set(new EdgeDriver());
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 			}
 		}
@@ -119,11 +125,11 @@ public abstract class BrowserUtility {
 				FirefoxOptions options = new FirefoxOptions();
 				options.addArguments("--headless");
 				driver.set(new FirefoxDriver(options));
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 			} else {
 				driver.set(new FirefoxDriver());
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(30)));
 
 			}
 		}
@@ -143,7 +149,9 @@ public abstract class BrowserUtility {
 		logger.info("Finding Element with the locator " + locator);
 
 		// WebElement element = driver.get().findElement(locator);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		WebElement element = wait.get().until(ExpectedConditions.elementToBeClickable(locator));
+		// WebElement element =
+		// wait.until(ExpectedConditions.elementToBeClickable(locator));
 
 		logger.info("Element Found and now performing Click");
 
@@ -154,7 +162,7 @@ public abstract class BrowserUtility {
 		logger.info("Finding Element with the locator " + locator);
 
 		// WebElement element = driver.get().findElement(locator);
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		WebElement element = wait.get().until(ExpectedConditions.visibilityOfElementLocated(locator));
 
 		logger.info("Element Found and now performing Click");
 
@@ -172,7 +180,7 @@ public abstract class BrowserUtility {
 		logger.info("Finding Element with the locator " + locator);
 
 		// WebElement element = driver.get().findElement(locator);
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		WebElement element = wait.get().until(ExpectedConditions.visibilityOfElementLocated(locator));
 
 		logger.info("Element Found and now enter text " + textToEnter);
 
@@ -183,7 +191,7 @@ public abstract class BrowserUtility {
 		logger.info("Finding Element with the locator " + textBoxLocator);
 
 		// WebElement element = driver.get().findElement(textBoxLocator);
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(textBoxLocator));
+		WebElement element = wait.get().until(ExpectedConditions.visibilityOfElementLocated(textBoxLocator));
 
 		logger.info("Element Found and now clearing the text box field");
 
@@ -202,7 +210,7 @@ public abstract class BrowserUtility {
 		logger.info("Finding Element with the locator " + locator);
 
 		// WebElement element = driver.get().findElement(locator);
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		WebElement element = wait.get().until(ExpectedConditions.visibilityOfElementLocated(locator));
 
 		logger.info("Element Found and now enter special Key " + keyToEnter);
 
@@ -270,8 +278,18 @@ public abstract class BrowserUtility {
 		return path;
 	}
 
+//	public void quit() {
+//		driver.get().quit(); // Quit the browser session
+//	}
+
 	public void quit() {
-		driver.get().quit(); // Quit the browser session
+
+		WebDriver wd = driver.get();
+		if (wd != null) {
+			wd.quit(); // Quit browser
+			driver.remove(); // clears ThreadLocal driver
+			wait.remove(); // clears ThreadLocal wait
+		}
 	}
 
 }
