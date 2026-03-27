@@ -2,11 +2,7 @@
 
 <suite name="Automation Practice Test Suite" parallel="classes"
 	thread-count="8" verbose="1">
-	<groups>
-		<run>
-			<include name="${groups}"></include>
-		</run>
-	</groups>
+	
 	<test name="UI Automation Test">
 		<parameter name="browser" value="${browser}" />
 		<parameter name="isLambdaTest" value="${isLambdaTest}" />

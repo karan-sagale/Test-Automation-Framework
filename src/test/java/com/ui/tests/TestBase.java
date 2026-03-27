@@ -43,27 +43,27 @@ public class TestBase {
 		return homePage;
 	}
 
-//	@AfterMethod(description = "Tear Down the browser")
-//	public void tearDown() {
-//		if (isLambdaTest) {
-//			LambdaTestUtility.quitSession(); // To quit browser sessions on LambdaTest
-//		} else {
-//			homePage.quit(); // To quit browser sessions on Local Instance
-//		}
-//
-//	}
-
-	@AfterMethod(alwaysRun = true, description = "Tear Down the browser")
+	@AfterMethod(description = "Tear Down the browser")
 	public void tearDown() {
-		try {
-			if (isLambdaTest) {
-				LambdaTestUtility.quitSession();
-			} else if (homePage != null) {
-				homePage.quit();
-			}
-		} catch (Exception e) {
-			System.out.println("Teardown skipped: " + e.getMessage());
+		if (isLambdaTest) {
+			LambdaTestUtility.quitSession(); // To quit browser sessions on LambdaTest
+		} else {
+			homePage.quit(); // To quit browser sessions on Local Instance
 		}
+
 	}
+
+//	@AfterMethod(alwaysRun = true, description = "Tear Down the browser")
+//	public void tearDown() {
+//		try {
+//			if (isLambdaTest) {
+//				LambdaTestUtility.quitSession();
+//			} else if (homePage != null) {
+//				homePage.quit();
+//			}
+//		} catch (Exception e) {
+//			System.out.println("Teardown skipped: " + e.getMessage());
+//		}
+//	}
 
 }

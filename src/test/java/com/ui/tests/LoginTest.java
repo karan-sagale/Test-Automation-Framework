@@ -34,6 +34,6 @@ public class LoginTest extends TestBase {
 			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
 	public void loginExcelTest(User user) {
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
-				"Karan Sagale1");
+				"Vavic Test1");
 	}
 }
