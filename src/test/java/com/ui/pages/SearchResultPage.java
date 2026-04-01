@@ -24,8 +24,8 @@ public class SearchResultPage extends BrowserUtility {
 
 	public boolean isSearchTermPresentInProductList(String searchTerm) {
 		List<String> keywords = Arrays.asList(searchTerm.toLowerCase().split(" "));
-		List<String> producNamesList = getAllVisibleText(ALL_PRODUCT_LISTS_NAME);
-		boolean result = producNamesList.stream()
+		List<String> productNamesList = getAllVisibleText(ALL_PRODUCT_LISTS_NAME);
+		boolean result = productNamesList.stream()
 				.anyMatch(name -> (keywords.stream().anyMatch(name.toLowerCase()::contains)));
 		return result;
 	}
